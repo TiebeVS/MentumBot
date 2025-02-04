@@ -150,4 +150,9 @@ client.on(Events.MessageCreate, (message) => {
 
 
 // Bot login
+
+require('dotenv').config();
+const TOKEN = process.env.DISCORD_TOKEN;
+
+client.login(TOKEN);
 client.login(token);
